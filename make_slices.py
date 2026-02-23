@@ -199,7 +199,7 @@ def determine_value_coordplane(args,dims):
         case "z":
             is_in_range = ((0<=nslice) and ( nslice <= nz-1))
     if  not is_in_range:
-        raise ValueError(f"coordinate plane {args.coordplane} outside range {shape}")  
+        raise ValueError(f"coordinate plane {args.coordplane} outside range {dims}")  
     return(nslice)    
    
 
